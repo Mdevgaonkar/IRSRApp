@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Book Entry</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+       <br>
+        <div class="well">
+           <form class="form">
+           <label> Select Type
+           <div class="radio">
+              <label>
+                <input type="radio" name="typeOption" id="B" value="B">
+                Books
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="typeOption" id="I" value="I">
+                Instruments
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="typeOption" id="Br" value="Br">
+                Branches
+              </label>
+            </div>
+            </label>
+            <br>
+            <label> Select File
+            <div class="input-group col-md-6">
+                <label class="input-group-btn">
+                    <span class="btn btn-primary">
+                        Browse&hellip; <input type="file" id="dataFileXlsx"style="display: none;" multiple>
+                    </span>
+                </label>
+                <div class="form-group">
+                <input type="text" class="form-control" id = "filename" readonly>
+                </div>
+            </div>
+            </label>
+            </form>
+        </div>
+        <div class="panel panel-primary" id="dataWindow">
+            <div class="panel panel-heading">
+                <h3 class="panel-title">
+                    Data from file
+                </h3>
+            </div>
+            <div class="panel-body" id="table"></div>
+        </div>
+           <pre id="output" class="well"></pre>
+    </div>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="customJS/xlsx.full.min.js"></script>
+    <script src="customJS/xlsxToJSONConverter.js"></script>
+    <script src="customJS/notify.min.js"></script>
+    <script data-pace-options='{ "ajax": true }' src="customJS/pace.js"></script>
+  </body>
+</html>
