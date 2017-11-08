@@ -1,0 +1,53 @@
+basic idea updates
+
+--https://docs.oracle.com/cd/E11882_01/appdev.112/e23094/xdb13gen.htm#ADXDB5016
+
+SELECT XMLElement("Employee", 
+                  XMLAttributes('http://www.w3.org/2001/XMLSchema' AS
+                                  "xmlns:xsi",
+                                'http://www.oracle.com/Employee.xsd' AS
+                                  "xsi:nonamespaceSchemaLocation"),
+                  XMLForest(employee_id, last_name, salary)) AS "RESULT"
+   FROM hr.employees
+   WHERE department_id = 10;
+   
+   RESULT
+-----------------------------------------------------------------------------
+<Employee xmlns:xsi="http://www.w3.org/2001/XMLSchema"
+          xsi:nonamespaceSchemaLocation="http://www.oracle.com/Employee.xsd">
+   <EMPLOYEE_ID>200</EMPLOYEE_ID>
+   <LAST_NAME>Whalen</LAST_NAME>
+   <SALARY>4400</SALARY>
+</Employee>
+
+
+SELECT XMLForest(
+  dept_t(department_id,
+         department_name,
+         cast(MULTISET
+              (SELECT employee_id, last_name
+                 FROM hr.employees e WHERE e.department_id = d.department_id)
+              AS emplist_t))
+         AS "Department")
+  AS deptxml
+  FROM hr.departments d
+  WHERE department_id=10;
+
+DEPTXML
+---------------------------------
+<Department DEPTNO="10">
+  <DNAME>Administration</DNAME>
+    <EMP_LIST>
+      <EMP_T EMPNO="200">
+        <ENAME>Whalen</ENAME>
+      </EMP_T>
+    </EMP_LIST>
+</Department>
+
+1 row selected.
+
+
+--concatenate rows using listagg
+--and emove newlines using following regexp
+
+regexp_replace(var1, '((\)|^).*?(\(|$))|'||chr(10), '\1', 1, 0, 'n');
