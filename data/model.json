@@ -1,0 +1,64 @@
+{
+   "EffortDataDump": {
+      "Resource": [
+         {
+            "resourceName": "Sara John",
+            "location": "Offshore",
+            "analysed": "Y",
+            "serviceRequests": {
+               "Ticket": [
+                  {
+                     "SrNumber": "SR2312121",
+                     "SrInfo": "SR is related to so an so thing",
+                     "SrStatusInd": "OPEN",
+                     "SrStatus": "Work in Progress",
+                     "SrOpenDt": "01/11/2017",
+                     "SrLastUpdDt": "02/11/2017",
+                     "SrEstimatedHrs": "40",
+                     "SrHrsSpent": "13"
+                  },
+                  {
+                     "SrNumber": "SR2312221",
+                     "SrInfo": "SR is related to so an so thing",
+                     "SrStatusInd": "CLOSED",
+                     "SrStatus": "Completed and Closed",
+                     "SrOpenDt": "01/11/2017",
+                     "SrLastUpdDt": "02/11/2017",
+                     "SrEstimatedHrs": "40",
+                     "SrHrsSpent": "13"
+                  }
+               ]
+            }
+         },
+         {
+            "resourceName": "Sara John",
+            "location": "Offshore",
+            "analysed": "Y",
+            "serviceRequests": {
+               "Ticket": [
+                  {
+                     "SrNumber": "SR2312121",
+                     "SrInfo": "SR is related to so an so thing",
+                     "SrStatusInd": "OPEN",
+                     "SrStatus": "Work in Progress",
+                     "SrOpenDt": "01/11/2017",
+                     "SrLastUpdDt": "02/11/2017",
+                     "SrEstimatedHrs": "40",
+                     "SrHrsSpent": "13"
+                  },
+                  {
+                     "SrNumber": "SR2312221",
+                     "SrInfo": "SR is related to so an so thing",
+                     "SrStatusInd": "CLOSED",
+                     "SrStatus": "Completed and Closed",
+                     "SrOpenDt": "01/11/2017",
+                     "SrLastUpdDt": "02/11/2017",
+                     "SrEstimatedHrs": "40",
+                     "SrHrsSpent": "13"
+                  }
+               ]
+            }
+         }
+      ]
+   }
+}

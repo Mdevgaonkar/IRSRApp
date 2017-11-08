@@ -1,0 +1,58 @@
+
+<?xml version="1.0" encoding="UTF-8" ?>
+<EffortDataDump>
+  <Resource>
+    <resourceName>Sara John</resourceName>
+    <location>Offshore</location>
+    <analysed>Y</analysed>
+    <serviceRequests>
+      <Ticket>
+        <SrNumber>SR2312121</SrNumber>
+        <SrInfo>SR is related to so an so thing</SrInfo>
+        <SrStatusInd>OPEN</SrStatusInd>
+        <SrStatus>Work in Progress</SrStatus>
+        <SrOpenDt>01/11/2017</SrOpenDt>
+        <SrLastUpdDt>02/11/2017</SrLastUpdDt>
+        <SrEstimatedHrs>40</SrEstimatedHrs>
+        <SrHrsSpent>13</SrHrsSpent>
+      </Ticket>
+      <Ticket>
+        <SrNumber>SR2312221</SrNumber>
+        <SrInfo>SR is related to so an so thing</SrInfo>
+        <SrStatusInd>CLOSED</SrStatusInd>
+        <SrStatus>Completed and Closed</SrStatus>
+        <SrOpenDt>01/11/2017</SrOpenDt>
+        <SrLastUpdDt>02/11/2017</SrLastUpdDt>
+        <SrEstimatedHrs>40</SrEstimatedHrs>
+        <SrHrsSpent>13</SrHrsSpent>
+      </Ticket>
+    </serviceRequests>
+  </Resource>
+  <Resource>
+    <resourceName>Sara John</resourceName>
+    <location>Offshore</location>
+    <analysed>Y</analysed>
+    <serviceRequests>
+      <Ticket>
+        <SrNumber>SR2312121</SrNumber>
+        <SrInfo>SR is related to so an so thing</SrInfo>
+        <SrStatusInd>OPEN</SrStatusInd>
+        <SrStatus>Work in Progress</SrStatus>
+        <SrOpenDt>01/11/2017</SrOpenDt>
+        <SrLastUpdDt>02/11/2017</SrLastUpdDt>
+        <SrEstimatedHrs>40</SrEstimatedHrs>
+        <SrHrsSpent>13</SrHrsSpent>
+      </Ticket>
+      <Ticket>
+        <SrNumber>SR2312221</SrNumber>
+        <SrInfo>SR is related to so an so thing</SrInfo>
+        <SrStatusInd>CLOSED</SrStatusInd>
+        <SrStatus>Completed and Closed</SrStatus>
+        <SrOpenDt>01/11/2017</SrOpenDt>
+        <SrLastUpdDt>02/11/2017</SrLastUpdDt>
+        <SrEstimatedHrs>40</SrEstimatedHrs>
+        <SrHrsSpent>13</SrHrsSpent>
+      </Ticket>
+    </serviceRequests>
+  </Resource>
+</EffortDataDump>

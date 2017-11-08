@@ -1,0 +1,37 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="EffortDataDump">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Resource">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="resourceName"/>
+              <xs:element type="xs:string" name="location"/>
+              <xs:element type="xs:string" name="analysed"/>
+              <xs:element name="serviceRequests">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Ticket" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="SrNumber"/>
+                          <xs:element type="xs:string" name="SrInfo"/>
+                          <xs:element type="xs:string" name="SrStatusInd"/>
+                          <xs:element type="xs:string" name="SrStatus"/>
+                          <xs:element type="xs:string" name="SrOpenDt"/>
+                          <xs:element type="xs:string" name="SrLastUpdDt"/>
+                          <xs:element type="xs:byte" name="SrEstimatedHrs"/>
+                          <xs:element type="xs:byte" name="SrHrsSpent"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
