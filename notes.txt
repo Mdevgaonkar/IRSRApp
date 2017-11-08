@@ -46,7 +46,7 @@ DEPTXML
 
 1 row selected.
 
-
+--https://docs.oracle.com/cloud/latest/db112/SQLRF/functions089.htm#SQLRF30030
 --concatenate rows using listagg
 --and emove newlines using following regexp
 
